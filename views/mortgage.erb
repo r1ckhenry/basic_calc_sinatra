@@ -1,0 +1,15 @@
+<div class="modal-header"><i class="fa fa-diamond"></i> Mortgage Calculator</div>
+
+<div class="modal-body">
+  <form action="/mortgage" method="get">
+    <label for="principal_sum">Principal</label>
+    <input type="text" name="principal_sum" />
+    <label for="interest">Yearly interest rate</label>
+    <input type="text" name="interest" />
+    <label for="payments">Number of payments</label>
+    <input type="text" name="payments" />
+    <input class="button" type="submit">
+  </form>
+</div>
+
+<div class="modal-footer"><%= "Your monthly mortgage payment is $#{@result}" %></div>

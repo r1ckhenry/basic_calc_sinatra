@@ -1,0 +1,13 @@
+<div class="modal-header"><i class="fa fa-forumbee"></i> Square Root Calculator</div>
+
+<div class="modal-body">
+  <form action="/sqrt" method="get">
+    <label for="number">Number</label>
+    <input type="text" name="number" />
+    <input class="button" type="submit" />
+  </form>
+</div>
+
+<% if @result != 0.0 %>
+  <div class="modal-footer"><%= "#{ @result }" %></div>
+<% end %>

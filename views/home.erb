@@ -1,0 +1,17 @@
+<div class="modal-header"><i class="fa fa-calculator"></i> Basic Calculator</div>
+
+<div class="modal-body">
+  <form action="/" method="get">
+    <label for="first">First Number</label>
+    <input type="text" name="first" placeholder="Enter the first number">
+    <label for="second">Operator</label>
+    <input type="text" name="operator" placeholder="Enter the operator">
+    <label for="second">Second Number</label>
+    <input type="text" name="second" placeholder="Enter the second number">
+    <input class="button" type="submit">
+  </form>
+</div>
+
+<% if @result %>
+  <div class="modal-footer">The result of <%= @first %> <%= @operator %> <%= @second %> is: <%= @result %></div>
+<% end %>

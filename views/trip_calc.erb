@@ -1,0 +1,18 @@
+<div class="modal-header"><i class="fa fa-subway"></i> Basic Calculator</div>
+
+<div class="modal-body">
+  <form action="/trip_calc" method="get">
+    <label for="distance">Distance</label>
+    <input type="text" name="distance" />
+    <label for="mpg">MPG</label>
+    <input type="text" name="mpg" />
+    <label for="cost">Cost</label>
+    <input type="text" name="cost" />
+    <label for="speed">Speed</label>
+    <input type="text" name="speed" />
+    <input class="button" type="submit">
+  </form>
+</div>
+
+
+<div class="modal-footer"><%="It will take you #{@result_hours} hours at a cost of $#{@result_cost}"%></div>

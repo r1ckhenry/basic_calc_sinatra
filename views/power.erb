@@ -1,0 +1,15 @@
+<div class="modal-header"><i class="fa fa-connectdevelop"></i> Power calculator</div>
+
+<div class="modal-body">
+  <form action="/power" method="get">
+    <label for="first">First Number</label>
+    <input type="text" name="first" placeholder="Enter the first number">
+    <label for="second">Second Number</label>
+    <input type="text" name="second" placeholder="Enter the first number">
+    <input class="button" type="submit">
+  </form>
+</div>
+
+<% if @power != 1.0 %>
+  <div class="modal-footer"><%= "#{@result}" %></div>
+<% end %>

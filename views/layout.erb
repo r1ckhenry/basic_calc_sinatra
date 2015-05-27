@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My amazing calculator</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/normalize.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body class="bg-img">
+  <div class="box box-2"><nav>
+      <li class="brand default"><i class="fa fa-cubes"></i> CALC</li>
+      <li class="nav-heading default">BASIC</li>
+      <li><a href="/"><i class="fa fa-calculator"></i> Calculator</a></li> 
+      <li><a href="/power"><i class="fa fa-connectdevelop"></i> Power</a></li> 
+      <li><a href="/sqrt"><i class="fa fa-forumbee"></i> Sqrt</a></li> 
+      <li class="nav-heading default">ADVANCED</li>
+      <li><a href="/mortgage"><i class="fa fa-diamond"></i> Mortgage</a></li> 
+      <li><a href="/trip_calc"><i class="fa fa-subway"></i> Trip calc</a></li> 
+    </nav></div><div class="box box-8"><div class="box box-4 modal"><%= yield %></div></div>
+
+</body>
+</html>
